@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Learn how to recycle your Coca-Cola bottle or can the right way and take the Responsible Sip Pledge.">
+    <meta name="theme-color" content="#E41E2B">
+    <title>Coca-Cola | Refresh the World. Responsibly.</title>
+    <style>
+        :root {
+            --coke-red: #E41E2B;
+            --coke-black: #111111;
+            --bg-light: #F9F9F9;
+            --card-bg: #FFFFFF;
+            --text-muted: #555555;
+            --accent-green: #2E7D32;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--coke-black);
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        /* Banner Header */
+        header {
+            background-color: var(--coke-red);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 5px;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* Journey Process Strip */
+        .journey-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 80px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: var(--coke-red);
+            text-transform: uppercase;
+        }
+
+        .arrow {
+            color: #CCC;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Main Content Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 5px solid var(--coke-red);
+        }
+
+        .card.green {
+            border-left-color: var(--accent-green);
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            color: var(--coke-black);
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Call to Action Button */
+        .btn-recycle {
+            display: block;
+            width: 100%;
+            background-color: var(--accent-green);
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background 0.2s ease;
+            box-shadow: 0 3px 6px rgba(46,125,50,0.3);
+        }
+
+        .btn-recycle:hover {
+            background-color: #236127;
+        }
+
+        .btn-recycle:focus-visible {
+            outline: 3px solid var(--coke-black);
+            outline-offset: 3px;
+        }
+
+        .btn-recycle:disabled {
+            background-color: #7a9c7c;
+            cursor: default;
+            box-shadow: none;
+        }
+
+        /* Interactive Counter Section */
+        .pledge-box {
+            text-align: center;
+            background: #E8F5E9;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px;
+            border: 1px solid #C8E6C9;
+        }
+
+        .pledge-box h3 {
+            color: var(--accent-green);
+            margin-bottom: 8px;
+        }
+
+        .pledge-box p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .pledge-count {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--coke-black);
+            margin: 10px 0;
+        }
+
+        .thanks {
+            margin-top: 12px;
+            font-weight: bold;
+            color: var(--accent-green);
+            min-height: 1.6em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Coca-Cola</h1>
+        <p>Refresh the World. Responsibly.</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Journey Bar -->
+        <div class="journey-bar">
+            <div class="step"><span class="step-title">1. Enjoy</span></div>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+            <div class="step"><span class="step-title">2. Dispose</span></div>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+            <div class="step"><span class="step-title">3. Recycle</span></div>
+        </div>
+
+        <!-- Main Card -->
+        <section class="card">
+            <h2>Why does your bottle’s next step matter?</h2>
+            <p>Every packaging item has a lifecycle. When you dispose of your Coca-Cola bottle or can in a dedicated recycling bin, you allow materials to be repurposed into new packaging, reducing waste and helping keep plastic out of oceans.</p>
+        </section>
+
+        <!-- Quick Tips Card -->
+        <section class="card green">
+            <h2>3 Quick Steps for Recycling Right</h2>
+            <p><strong>1. Empty it:</strong> Make sure all liquid is finished before recycling.<br>
+               <strong>2. Keep caps on:</strong> Plastic caps are recyclable when attached to the bottle.<br>
+               <strong>3. Check local rules:</strong> Confirm what packaging your local stream accepts.</p>
+        </section>
+
+        <!-- Interactive Pledge Section -->
+        <section class="pledge-box">
+            <h3>Take the Responsible Sip Pledge</h3>
+            <p>Join others in committing to proper disposal.</p>
+            <div class="pledge-count" id="count" aria-live="polite">1,248</div>
+            <button type="button" class="btn-recycle" id="pledgeBtn">I Placed My Bottle in Recycling!</button>
+            <p class="thanks" id="thanks" aria-live="polite"></p>
+        </section>
+
+        <footer>
+            Student marketing project (demo). Not affiliated with or endorsed by The Coca-Cola Company.
+        </footer>
+
+    </main>
+
+    <script>
+        const BASE_COUNT = 1248;
+        const STORAGE_KEY = 'responsibleSipPledged';
+
+        const countEl = document.getElementById('count');
+        const btn = document.getElementById('pledgeBtn');
+        const thanksEl = document.getElementById('thanks');
+
+        function alreadyPledged() {
+            try {
+                return localStorage.getItem(STORAGE_KEY) === 'yes';
+            } catch (e) {
+                return false;
+            }
+        }
+
+        function markPledged() {
+            try {
+                localStorage.setItem(STORAGE_KEY, 'yes');
+            } catch (e) { /* storage blocked: ignore */ }
+        }
+
+        function showPledged(count) {
+            countEl.textContent = count.toLocaleString();
+            btn.disabled = true;
+            btn.textContent = 'Pledge Taken ✔';
+            thanksEl.textContent = 'Thank you for recycling responsibly!';
+        }
+
+        // Restore state if this device already pledged
+        if (alreadyPledged()) {
+            showPledged(BASE_COUNT + 1);
+        }
+
+        btn.addEventListener('click', function () {
+            if (btn.disabled) return;
+            markPledged();
+            showPledged(BASE_COUNT + 1);
+        });
+    </script>
+
+</body>
+</html>
